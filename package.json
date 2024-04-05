@@ -1,0 +1,42 @@
+{
+  "name": "@artcom/logger",
+  "version": "1.5.1",
+  "description": "A Winston logger which logs to JSON with ordered keys and error stack support.",
+  "main": "lib/main.js",
+  "files": [
+    "lib/"
+  ],
+  "scripts": {
+    "format": "prettier --write src",
+    "lint": "eslint --ext .ts src --fix",
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "prepublishOnly": "npm run lint && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/artcom/logger.git"
+  },
+  "dependencies": {
+    "safe-stable-stringify": "^2.3.1",
+    "triple-beam": "^1.3.0",
+    "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.16",
+    "@types/triple-beam": "^1.3.2",
+    "@typescript-eslint/eslint-plugin": "^5.36.2",
+    "@typescript-eslint/parser": "^5.36.2",
+    "eslint": "^8.23.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.2"
+  },
+  "license": "MIT",
+  "keywords": [
+    "json",
+    "logger",
+    "winston"
+  ]
+}
